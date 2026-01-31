@@ -1,0 +1,18 @@
+# Packages für docs/
+
+Diese package.json wird verwendet, um VuePress global zu installieren.
+
+{
+  "name": "hostile-space-docs",
+  "version": "1.0.0",
+  "description": "Hostile Space Documentation",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-rc.0",
+    "@vuepress/client": "^2.0.0-rc.0",
+    "vue": "^3.3.4"
+  }
+}

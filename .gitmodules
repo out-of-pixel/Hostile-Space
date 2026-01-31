@@ -1,3 +1,4 @@
 [submodule "vuepress"]
 	path = vuepress
-	url = https://github.com/vuepress/core/tree/release
+	url = https://github.com/vuejs/vuepress.git
+	branch = release

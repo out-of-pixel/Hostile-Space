@@ -32,13 +32,14 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        working-directory: ./vuepress
-        run: npm install
+      - name: Install VuePress and dependencies
+        run: |
+          npm install -g vuepress@next
+          npm install
 
-      - name: Build VuePress site
-        working-directory: ./vuepress
-        run: npm run build
+      - name: Build site
+        run: |
+          vuepress build docs
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -46,7 +47,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './vuepress/.vuepress/dist'
+          path: './docs/.vuepress/dist'
 
   deploy:
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
