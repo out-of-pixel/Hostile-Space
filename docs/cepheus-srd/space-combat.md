@@ -24,7 +24,7 @@ Ships can take multiple actions if their crew is well-coordinated, depending on 
 | Range | Distance |
 |-------|----------|
 | Personal | Contact |
-| Close | <10,000 km |
+| Close | &lt;10,000 km |
 | Short | 10,000-100,000 km |
 | Medium | 100,000-1,000,000 km |
 | Long | 1,000,000-10,000,000 km |

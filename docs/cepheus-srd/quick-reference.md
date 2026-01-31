@@ -37,7 +37,7 @@ All task resolution in the Cepheus Engine uses this mechanic.
 
 | Range | Distance |
 |-------|----------|
-| Personal | <1.5 m |
+| Personal | &lt;1.5 m |
 | Close | 1.5-3 m |
 | Short | 3-12 m |
 | Medium | 12-50 m |

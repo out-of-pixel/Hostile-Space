@@ -56,7 +56,7 @@ Combat range determines attack difficulty:
 
 | Range | Distance | Difficulty |
 |-------|----------|-----------|
-| Personal | <1.5 m | Close quarters |
+| Personal | &lt;1.5 m | Close quarters |
 | Close | 1.5-3 m | +0 to -2 |
 | Short | 3-12 m | Varies by weapon |
 | Medium | 12-50 m | Varies by weapon |
