@@ -60,3 +60,20 @@ This content is derived from the Cepheus Engine System Reference Document, which
 Cepheus Engine and Samardan Press are trademarks of Jason Flynn Kemp.
 
 For more information, visit: [Cepheus Engine SRD](https://cepheus-srd.opengamingnetwork.com/)
+
+## Legal Information
+
+This documentation is distributed under the **Open Gaming License v 1.0a**. See [OGL](ogl.html) for the full license text.
+
+## Attribution
+
+**Cepheus Engine** - Designed by Jason Flynn Kemp at Samardan Press
+**Open Gaming Content** - Made available under the Open Gaming License
+**Source** - Open Gaming Network (opengamingnetwork.com)
+
+All trademark references and Open Gaming Content are preserved as per the OGL.
+
+---
+
+**Last Updated:** January 31, 2026
+**Total Content:** 13 markdown files covering 60,000+ words of game rules and guidance
