@@ -1,5 +1,4 @@
 import { defineUserConfig } from 'vuepress'
-import { defaultTheme } from '@vuepress/theme-default'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
@@ -9,7 +8,7 @@ export default defineUserConfig({
   
   bundler: viteBundler(),
   
-  theme: defaultTheme({
+  themeConfig: {
     logo: '/logo.png',
     navbar: [
       { text: 'Home', link: '/' },
@@ -35,5 +34,5 @@ export default defineUserConfig({
         },
       ],
     },
-  }),
+  },
 })
