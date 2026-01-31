@@ -35,7 +35,7 @@ jobs:
       - name: Install VuePress and dependencies
         working-directory: ./docs
         run: |
-          npm install --legacy-peer-deps
+          npm install
 
       - name: Build site
         working-directory: ./docs
