@@ -51,7 +51,6 @@ jobs:
           path: './docs/.vuepress/dist'
 
   deploy:
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
     needs: build
     runs-on: ubuntu-latest
     environment:
