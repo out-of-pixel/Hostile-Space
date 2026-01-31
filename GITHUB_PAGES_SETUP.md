@@ -8,7 +8,7 @@
 
 ### 2. Submodule hinzufügen
 ```bash
-git submodule add https://github.com/YOUR_USERNAME/vuepress-docs.git docs
+git submodule add https://github.com/out-of-pixel/vuepress-docs.git docs
 git commit -m "Add VuePress as submodule"
 git push
 ```
@@ -65,7 +65,7 @@ Der Workflow startet automatisch und deployt die Seite zu GitHub Pages.
 
 ### Submodule clonen
 ```bash
-git clone --recursive https://github.com/YOUR_USERNAME/Hostile-Space.git
+git clone --recursive https://github.com/out-of-pixel/Hostile-Space.git
 ```
 
 Oder für bereits geclonte Repos:
