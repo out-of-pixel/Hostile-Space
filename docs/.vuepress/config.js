@@ -1,9 +1,15 @@
-export default {
+import { defineUserConfig } from 'vuepress'
+import { defaultTheme } from '@vuepress/theme-default'
+import { viteBundler } from '@vuepress/bundler-vite'
+
+export default defineUserConfig({
   lang: 'de-DE',
   title: 'Hostile Space',
   description: 'Dokumentation für Hostile Space',
   
-  themeConfig: {
+  bundler: viteBundler(),
+  
+  theme: defaultTheme({
     logo: '/logo.png',
     navbar: [
       { text: 'Home', link: '/' },
@@ -14,20 +20,20 @@ export default {
       '/guide/': [
         {
           text: 'Getting Started',
-          items: [
-            { text: 'Installation', link: '/guide/installation.md' },
-            { text: 'Quick Start', link: '/guide/quick-start.md' },
+          children: [
+            '/guide/installation.md',
+            '/guide/quick-start.md',
           ]
         },
       ],
       '/api/': [
         {
           text: 'API Reference',
-          items: [
-            { text: 'Components', link: '/api/components.md' },
+          children: [
+            '/api/components.md',
           ]
         },
       ],
     },
-  },
-}
+  }),
+})
