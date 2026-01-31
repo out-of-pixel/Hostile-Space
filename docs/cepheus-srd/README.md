@@ -125,7 +125,7 @@ Consider:
 
 ## Legal Information
 
-This documentation is distributed under the **Open Gaming License v 1.0a**. See [OGL](ogl-license.txt) for the full license text.
+This documentation is distributed under the **Open Gaming License v 1.0a**. See [OGL](ogl.html) for the full license text.
 
 ## Attribution
 

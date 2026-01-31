@@ -50,7 +50,7 @@ Rules for generating and describing worlds in the Cepheus Engine universe.
 ### [Psionics](psionics.md)
 Rules for psionic powers and abilities.
 
-### [Open Game License](ogl-license.txt)
+### [Open Game License](ogl.html)
 The complete Open Game License v 1.0a text that governs the use of this content.
 
 ## Attribution
