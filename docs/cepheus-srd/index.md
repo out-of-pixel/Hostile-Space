@@ -35,9 +35,6 @@ Detailed rules for resolving personal combat encounters, including initiative, a
 ### [Adventures](adventures.md)
 Guidelines for creating and running adventures in a Cepheus Engine campaign.
 
-### [Environments and Hazards](environments-hazards.md)
-Rules for various environmental conditions and hazards that characters may encounter.
-
 ### [Off-World Travel](off-world-travel.md)
 Rules for interplanetary and interstellar travel.
 
@@ -52,15 +49,6 @@ Rules for generating and describing worlds in the Cepheus Engine universe.
 
 ### [Psionics](psionics.md)
 Rules for psionic powers and abilities.
-
-### [Social Encounters](social-encounters.md)
-Rules for social interaction and negotiations.
-
-### [Planetary Wilderness Encounters](wilderness-encounters.md)
-Guidance for wilderness and planetary exploration.
-
-### [Starship Encounters](starship-encounters.md)
-Rules for encounters with other starships and space-based events.
 
 ### [Open Game License](ogl.md)
 The complete Open Game License v 1.0a text that governs the use of this content.
