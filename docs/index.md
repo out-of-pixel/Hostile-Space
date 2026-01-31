@@ -13,5 +13,5 @@ Navigiere über das Menü links, um mehr über Hostile Space zu erfahren.
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/yourusername/Hostile-Space)
-- [Bug Reports](https://github.com/yourusername/Hostile-Space/issues)
+- [GitHub Repository](https://github.com/out-of-pixel/Hostile-Space)
+- [Bug Reports](https://github.com/out-of-pixel/Hostile-Space/issues)

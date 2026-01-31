@@ -1,6 +1,7 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { searchPlugin } from '@vuepress/plugin-search'
 
 export default defineUserConfig({
   base: '/Hostile-Space/',
@@ -9,6 +10,18 @@ export default defineUserConfig({
   description: 'Dokumentation für Hostile Space',
   
   bundler: viteBundler(),
+  
+  plugins: [
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: 'Suchen',
+        },
+      },
+      hotKeys: ['s', '/'],
+      maxSuggestions: 10,
+    }),
+  ],
   
   theme: defaultTheme({
     logo: '/logo.png',
