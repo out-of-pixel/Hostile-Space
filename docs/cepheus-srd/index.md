@@ -50,13 +50,13 @@ Rules for generating and describing worlds in the Cepheus Engine universe.
 ### [Psionics](psionics.md)
 Rules for psionic powers and abilities.
 
-### [Open Game License](ogl.md)
+### [Open Game License](ogl-license.txt)
 The complete Open Game License v 1.0a text that governs the use of this content.
 
 ## Attribution
 
 This content is derived from the Cepheus Engine System Reference Document, which is open gaming content under the Open Gaming License. All text in this document is designated as Open Gaming Content.
 
-**Cepheus Engine and Samardan Press** are trademarks of Jason "Flynn" Kemp.
+Cepheus Engine and Samardan Press are trademarks of Jason Flynn Kemp.
 
 For more information, visit: [Cepheus Engine SRD](https://cepheus-srd.opengamingnetwork.com/)

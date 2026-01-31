@@ -125,11 +125,11 @@ Consider:
 
 ## Legal Information
 
-This documentation is distributed under the **Open Gaming License v 1.0a**. See [OGL](ogl.md) for the full license text.
+This documentation is distributed under the **Open Gaming License v 1.0a**. See [OGL](ogl-license.txt) for the full license text.
 
 ## Attribution
 
-**Cepheus Engine** - Designed by Jason "Flynn" Kemp at Samardan Press
+**Cepheus Engine** - Designed by Jason Flynn Kemp at Samardan Press
 **Open Gaming Content** - Made available under the Open Gaming License
 **Source** - Open Gaming Network (opengamingnetwork.com)
 
