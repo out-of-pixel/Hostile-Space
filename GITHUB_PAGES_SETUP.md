@@ -1,81 +1,69 @@
-# GitHub Pages Setup mit VuePress
+# GitHub Pages Setup mit VuePress 2.0
 
-## Vorbereitung
+## ✅ Setup abgeschlossen!
 
-### 1. VuePress Repository erstellen
-- Erstelle ein neues Repository für deine VuePress-Dokumentation (z.B. `vuepress-docs`)
-- Oder verwende ein vorhandenes VuePress-Projekt
+Deine VuePress-Dokumentation wird automatisch auf GitHub Pages veröffentlicht:
+**https://out-of-pixel.github.io/Hostile-Space/**
 
-### 2. Submodule hinzufügen
-```bash
-git submodule add https://github.com/out-of-pixel/vuepress-docs.git docs
-git commit -m "Add VuePress as submodule"
-git push
-```
+## Struktur
 
-### 3. GitHub Pages konfigurieren
-Im Hauptrepository:
-1. Gehe zu **Settings** → **Pages**
-2. Wähle **Source**: GitHub Actions
-3. Der Workflow wird automatisch bereitgestellt
-
-### 4. Repository-Struktur
 ```
 Hostile-Space/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml          # GitHub Actions Workflow
-├── .gitmodules                 # Submodule-Konfiguration
-├── docs/                       # VuePress Submodule
-│   ├── package.json
-│   └── .vuepress/
-│       ├── config.js
-│       └── dist/               # Build-Output
+├── .github/workflows/
+│   └── deploy.yml              # GitHub Actions Workflow
+├── .gitmodules                 # VuePress Framework als Submodule
+├── vuepress/                   # VuePress Source (Submodule)
+├── docs/                       # Deine Wiki-Inhalte
+│   ├── .vuepress/
+│   │   └── config.js          # VuePress-Konfiguration
+│   ├── guide/
+│   │   ├── installation.md
+│   │   └── quick-start.md
+│   ├── api/
+│   │   └── components.md
+│   ├── index.md               # Startseite
+│   └── package.json           # Dependencies
 └── README.md
 ```
 
 ## Workflow-Funktionen
 
-Der `deploy.yml` Workflow:
-- ✅ Checkt Code mit Submodules aus
-- ✅ Installiert Node.js 18
-- ✅ Installiert VuePress-Dependencies
-- ✅ Baut die VuePress-Seite
-- ✅ Deployt zu GitHub Pages automatisch
+Der automatische Workflow (`deploy.yml`):
+- ✅ Läuft bei jedem Push auf main/master
+- ✅ Installiert Node.js 20
+- ✅ Installiert VuePress 2.0.0-rc.26 mit Dependencies
+- ✅ Baut die Dokumentation
+- ✅ Deployt automatisch zu GitHub Pages
 
-## Verwendung
+## Dokumentation bearbeiten
 
-### Änderungen in der Dokumentation
+### Neue Seite hinzufügen
+1. Erstelle eine `.md` Datei in `docs/` oder Unterordnern
+2. Füge sie zur Sidebar in `docs/.vuepress/config.js` hinzu
+3. Commit und push - automatisches Deployment!
+
+### Lokal testen
 ```bash
-# Das Submodule updaten
 cd docs
-# ... Änderungen vornehmen ...
-git add .
-git commit -m "Update docs"
-git push
-
-# Zurück zum Hauptrepository
-cd ..
-git add docs
-git commit -m "Update docs submodule"
-git push
+npm install
+npm run dev
 ```
 
-Der Workflow startet automatisch und deployt die Seite zu GitHub Pages.
+Öffne dann http://localhost:8080/Hostile-Space/
 
-### Submodule clonen
-```bash
-git clone --recursive https://github.com/out-of-pixel/Hostile-Space.git
+## Tech Stack
+
+- **VuePress**: 2.0.0-rc.26
+- **Theme**: @vuepress/theme-default (next)
+- **Bundler**: Vite (@vuepress/bundler-vite)
+- **Node.js**: 20
+- **CSS Preprocessor**: sass-embedded
+
+## Wichtige Konfiguration
+
+In `docs/.vuepress/config.js`:
+```js
+base: '/Hostile-Space/',  // Wichtig für GitHub Pages!
 ```
 
-Oder für bereits geclonte Repos:
-```bash
-git submodule update --init --recursive
-```
-
-## Tipps
-
-- **Caching**: NPM-Dependencies werden gecacht für schnellere Builds
-- **Nur auf main/master**: Deployment erfolgt nur auf main/master-Branch
-- **Pull Requests**: Werden gebaut, aber nicht deployed
-- **Manuelle Trigger**: Kann über "Run workflow" manuell gestartet werden
+Dies stellt sicher, dass alle Assets korrekt geladen werden.
