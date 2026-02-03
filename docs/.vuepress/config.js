@@ -32,6 +32,12 @@ export default defineUserConfig({
       { text: 'Cepheus SRD', link: '/docs/cepheus-srd/' },
     ],
     sidebar: {
+      '/': [
+        {
+          text: 'Home',
+          link: '/',
+        },
+      ],
       '/guide/': [
         {
           text: 'Getting Started',
@@ -88,6 +94,12 @@ export default defineUserConfig({
             '/docs/cepheus-srd/src/book3/starship-encounters.md',
             '/docs/cepheus-srd/src/book3/refereeing-the-game.md',
             '/docs/cepheus-srd/src/book3/adventures.md',
+          ]
+        },
+        {
+          text: 'Tools',
+          children: [
+            '/docs/cepheus-srd/src/tools/sector-generator.md',
           ]
         },
         {
