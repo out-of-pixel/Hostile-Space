@@ -1,3 +1,6 @@
 [submodule "vuepress"]
 	path = vuepress
 	url = https://github.com/vuejs/vuepress.git
+[submodule "docs/docs/cepheus-srd"]
+	path = docs/docs/cepheus-srd
+	url = https://github.com/orffen/cepheus-srd
