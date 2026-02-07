@@ -4,3 +4,6 @@
 [submodule "docs/docs/cepheus-srd"]
 	path = docs/docs/cepheus-srd
 	url = https://github.com/out-of-pixel/cepheus-srd
+[submodule "docs/docs/hostile-srd"]
+	path = docs/docs/hostile-srd
+	url = https://github.com/out-of-pixel/hostile-srd
